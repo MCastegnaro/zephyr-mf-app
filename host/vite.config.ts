@@ -38,4 +38,8 @@ export default defineConfig({
   build: {
     target: "chrome89",
   },
+
+  server: {
+    port: 5175,
+  },
 });

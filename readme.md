@@ -10,9 +10,11 @@ A comprehensive micro-frontend setup demonstrating Module Federation with multip
 - **Architecture**: Module Federation
 - **Host Application**: Vite
 - **Remote Applications**:
-  - Vite Remote (TypeScript)
-  - Rspack Remote
-  - Webpack Remote
+  - Vite Remote Host (TypeScript)
+  - Vite Remote Button (TypeScript)
+  - Vite Remote Footer (TypeScript)
+  - Vite Remote Product List(TypeScript)
+  - Vite Remote Header (TypeScript)
 - **Deployment**: Zephyr Cloud
 
 ## Prerequisites
@@ -25,9 +27,10 @@ A comprehensive micro-frontend setup demonstrating Module Federation with multip
 This example consists of multiple applications:
 
 - **`host/`** - Main host application built with Vite
-- **`remote/`** - Remote application built with Vite
-- **`rspack/`** - Remote application built with Rspack
-- **`webpack/`** - Remote application built with Webpack
+- **`remote-button/`** - Remote application built with Vite
+- **`remote-footer/`** - Remote application built with Vite
+- **`remote-header/`** - Remote application built with Vite
+- **`remote-product-list/`** - Remote application built with Vite
 
 ## Getting Started
 
@@ -40,9 +43,10 @@ This example consists of multiple applications:
 2. **Build all applications** (in order)
 
    ```bash
+   pnpm --filter=vite_remote_footer build
+   pnpm --filter=vite_remote_header build
    pnpm --filter=vite_remote_product_list build
-   pnpm --filter=vite_rspack build
-   pnpm --filter=vite_webpack build
+   pnpm --filter=vite_remote_remote build
    pnpm --filter=vite-host build
    ```
 
@@ -56,21 +60,23 @@ This example consists of multiple applications:
    Each application can be run independently:
 
    ```bash
-   # Host application (port 5173)
+   # Host application (port 5175)
    cd host && pnpm dev
 
    # Remote applications
-   cd remote && pnpm dev    # port 5174
-   cd rspack && pnpm dev    # port 8080
-   cd webpack && pnpm dev   # port 3000
+   cd remote-footer && pnpm dev    # port 5171
+   cd remote-header && pnpm dev    # port 5172
+   cd remote-product-list && pnpm dev    # port 5173
+   cd remote-button && pnpm dev    # port 5174
    ```
 
    **Development URLs:**
 
-   - **Host**: http://localhost:5173
-   - **Vite Remote**: http://localhost:5174
-   - **Rspack Remote**: http://localhost:8080
-   - **Webpack Remote**: http://localhost:3000
+   - **Host**: http://localhost:5175
+   - **Vite remote-footer**: http://localhost:5171
+   - **Vite remote-header**: http://localhost:5172
+   - **Vite remote-product-list**: http://localhost:5173
+   - **Vite remote-button**: http://localhost:5174
 
 ## Zephyr Cloud Integration
 
