@@ -4,6 +4,17 @@ A comprehensive micro-frontend setup demonstrating Module Federation with multip
 
 ![Host Application](./image.png)
 
+## Solo app links
+
+- Footer: https://matheus-castegnaro-35-vite-remote-footer-zephyr-m-7d59111ff-ze.zephyrcloud.app/
+- Header: https://matheus-castegnaro-36-vite-remote-header-zephyr-m-debe6f696-ze.zephyrcloud.app/
+- Product List: https://matheus-castegnaro-37-vite-remote-product-list-ze-da9637db1-ze.zephyrcloud.app/
+- Button: https://matheus-castegnaro-38-vite-remote-button-zephyr-m-f843f6dd4-ze.zephyrcloud.app/
+
+## Complete application link
+
+- host: https://matheus-castegnaro-40-vite-host-zephyr-mf-app-mca-b8d54f0f6-ze.zephyrcloud.app/
+
 ## Technology Stack
 
 - **Framework**: React 18
