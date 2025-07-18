@@ -32,36 +32,41 @@ This example consists of multiple applications:
 ## Getting Started
 
 1. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 2. **Build all applications** (in order)
+
    ```bash
-   pnpm --filter=vite_remote build
+   pnpm --filter=vite_remote_product_list build
    pnpm --filter=vite_rspack build
    pnpm --filter=vite_webpack build
    pnpm --filter=vite-host build
    ```
 
    Or use the convenience script:
+
    ```bash
    pnpm build
    ```
 
 3. **Development mode**
    Each application can be run independently:
+
    ```bash
    # Host application (port 5173)
    cd host && pnpm dev
-   
+
    # Remote applications
    cd remote && pnpm dev    # port 5174
    cd rspack && pnpm dev    # port 8080
    cd webpack && pnpm dev   # port 3000
    ```
-   
+
    **Development URLs:**
+
    - **Host**: http://localhost:5173
    - **Vite Remote**: http://localhost:5174
    - **Rspack Remote**: http://localhost:8080
@@ -74,6 +79,7 @@ This example demonstrates advanced micro-frontend deployment with Zephyr Cloud, 
 ## About Module Federation
 
 Module Federation allows multiple JavaScript applications to share components and dependencies at runtime. This example shows:
+
 - **Multi-bundler compatibility**: Different remotes using different bundlers
 - **Runtime composition**: Components loaded dynamically at runtime
 - **Independent deployment**: Each remote can be deployed separately
@@ -81,6 +87,7 @@ Module Federation allows multiple JavaScript applications to share components an
 ## About Zephyr Cloud
 
 Zephyr Cloud is a micro-frontend deployment platform that provides:
+
 - **Auto-deployment**: Seamless deployment from your build process
 - **Live preview links**: Instant preview URLs for your applications
 - **SemVer versioning**: Semantic versioning for your frontend modules

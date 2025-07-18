@@ -1,10 +1,10 @@
 {
-  "name": "vite-host",
+  "name": "vite_remote_header",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "set DEBUG=zephyr:log,zephyr:error && vite",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -27,11 +27,5 @@
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0",
     "vite": "^5.4.15"
-  },
-  "zephyr:dependencies": {
-    "vite_remote_footer": "zephyr:vite_remote_footer@*",
-    "vite_remote_header": "zephyr:vite_remote_header@*",
-    "vite_remote_product_list": "zephyr:vite_remote_product_list@*",
-    "vite_remote_button": "zephyr:vite_remote_button@*"
   }
 }

@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pnpm build-webpack && pnpm build-rspack && pnpm build-remote && pnpm build-host",
+    "build": "pnpm build-footer && pnpm build-header && pnpm build-product-list && pnpm build-button && pnpm build-host",
     "build-host": "pnpm --filter=vite-host build",
-    "build-remote": "pnpm --filter=vite_remote build",
-    "build-rspack": "pnpm --filter=vite_rspack build",
-    "build-webpack": "pnpm --filter=vite_webpack build"
+    "build-footer": "pnpm --filter=vite_remote_footer build",
+    "build-header": "pnpm --filter=vite_remote_header build",
+    "build-product-list": "pnpm --filter=vite_remote_product_list build",
+    "build-button": "pnpm --filter=vite_remote_button build"
   },
   "keywords": [],
   "author": "",

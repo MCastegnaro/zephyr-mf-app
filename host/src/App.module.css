@@ -1,0 +1,16 @@
+.root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  border: 2px dashed dodgerblue;
+  padding: 1.5rem;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
